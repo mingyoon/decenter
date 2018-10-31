@@ -1,0 +1,635 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*custom.css*/
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 8;
+}
+.headerWrap {
+    position: relative;
+    padding: 20px 15%;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 1px 2px #eeeeee;
+}
+.logo img {
+    width: 140px;
+}
+.menu {
+    position: absolute;
+    right: 10%;
+    top: 26px;
+    z-index: 11;
+}
+
+.menu .menuItem {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 20px;
+    font-size: 16px;
+}
+.menu .menuBtn {
+    transition: 0.3s;
+    padding-bottom: 6px;
+}
+.menu .menuItem:hover .menuBtn {
+    color: #538CF7;
+    border-bottom: 3px solid #538CF7;
+}
+/*.menu .menuItem:nth-child(4) {
+    font-weight: 500;
+    color: #538cf7;
+}*/
+
+.wrap {
+    padding: 0px 15%;
+}
+.scrollSection {
+    padding-top: 150px;
+}
+#section1 {
+    padding-top: 180px;
+    padding-bottom: 60px;
+}
+#section2 {
+    padding-top:66px;
+}
+#section3 {
+    /*padding-top: 160px;*/
+}
+.cover {
+    background-image: url(http://decentercorp.com/images/main_cover.png);
+    background-size: cover;
+    height: 100vh;
+    padding: 22% 15%;
+    box-sizing: border-box;
+    color:#fff;
+}
+.txtBig {
+    font-size:50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    margin-bottom: 60px;
+    display: inline-block;
+    line-height: 1.1;
+}
+.cover .coverTxt .txtSmall {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.txtBold {
+    font-weight: 500;
+}
+
+.subTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    /*color: #538cf7;*/
+}
+.subTitle svg {
+    position: relative;
+    top: -8px;
+    left: 2px;
+}
+.mark {
+    width: 25px;
+    height: 4px;
+    display:inline-block;
+    background-color:#538cf7;
+    margin: 26px 0px;
+}
+.subTxt {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.invest {
+    text-align: center;
+}
+.invest img{
+    width:310px;
+    margin: 60px 40px;
+    opacity: 0.3;
+}
+
+.grayBg {
+    background-image: url(http://decentercorp.com/images/service_bg_1920.png);
+    background-size: cover;
+    padding: 160px 0px;
+    text-align: center;
+    background-repeat:no-repeat;
+   background-position: center center;
+}
+.grayBg .subTitle {
+    color:#fff;
+}
+.grayBg .servBox {
+    background-color: #fff;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 6px;
+    padding-bottom: 30px;
+    box-shadow: 0px 2px 1px #cecece;
+    border-radius: 3px;
+    transition: 0.3s;
+    vertical-align: top;
+}
+.grayBg .servBox:hover {
+    transform: translate3d(0,-10px,0);
+}
+.grayBg .servBox .deImg {
+    height: 44px;
+    display: inline-block;
+    margin: 55px auto 30px;
+}
+.grayBg .servTxt {
+    text-align: left;
+    line-height: 1.7;
+    width: 82%;
+    margin: 10px 9% 30px;
+    font-size: 14px;
+    /*word-break:break-all;*/
+}
+
+.grayBg .servTxt .servTitle {
+    font-size: 16px;
+    line-height: 2.5;
+    font-weight: 600;
+}
+.servBox .deLink {
+    font-family: 'Montserrat', sans-serif;
+    color:#538cf7;
+}
+
+.crewIntro {
+    text-align: center;
+}
+.crewIntro img {
+    width: 100%;
+    margin-top: 50px;
+    /*border: 10px solid #538cf7;*/
+    /*filter: brightness(50%);*/
+}
+.crewIntro .subTxt.crewSub {
+    margin-bottom: 30px;
+}
+.crewIntro .crewPage {
+    line-height: 3;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #538cf7;
+    padding: 10px 30px;
+    margin: 8px;
+}
+.partner {
+    /*padding-top: 150px;*/
+    text-align: center;
+}
+
+.uk-active img {
+    width:80%;
+}
+
+.footer {
+    background-color: #333333;
+    padding: 80px 15%;
+    position: relative;
+    margin-top: 140px;
+}
+.footer .footLogo svg {
+    margin-bottom: 14px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.footer .footLogo svg:hover {
+    opacity: 1;
+}
+.footer .rightSection {
+    color:#fff;
+    position: absolute;
+    right: 15%;
+    top: 30%;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: right;
+}
+.footer .rightSection .corpBr {
+    display: none;
+}
+
+/*crew.css*/
+.mainPageWrap {
+    /*display: none;*/
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.crewPageWrap {
+    display: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+.menu .menuItem.corp {
+    font-weight: 500;
+    color: #538CF7;
+}
+.menu .menuItem.corp:hover .menuBtn {
+    color: #538CF7;
+    border-bottom: 3px solid #538CF7;
+}
+.crewCover {
+    background-image: url(http://decentercorp.com/images/crew_bg_1920.png);
+    background-size: 100%;
+    background-position: 0px 40%;
+    padding: 240px 15%;
+    margin-top: 68px;
+}
+.crewCover .txtBig {
+    text-align: center;
+    display: block;
+    color: #538cf7;
+    margin-bottom: 0;
+}
+.crewSection {
+    padding: 100px 0px 60px;
+    width: 100%;
+}
+.crew {
+    padding-bottom: 40px;
+}
+.crewSection .value {
+    padding: 40px 0px;
+    border-top: 1px solid #cecece;
+    /*border-bottom: 1px solid #cecece;*/
+}
+.crewSection .value .valueTitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2.5;
+    /*font-family: 'Montserrat', sans-serif;*/
+    color: #538CF7;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.crewSection .value .valueTitle svg {
+    position: relative;
+    /*top: 8px;*/
+    margin-right: 5px;
+}
+.value .valueItem {
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+.value .valueItem .vItemTitle {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    display:inline-block;
+    margin-bottom: 10px;
+}
+#crew2 {
+    padding-top:0px;
+}
+.gridWrap {
+    text-align: center;
+}
+.crewGrid {
+    text-align: left;
+        margin-left: 2%;
+}
+.crewGrid .crewBox {
+    width: 24%;
+    display: inline-block;
+    box-shadow: 0px 2px 1px #f0f0f0;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 5px 2px;
+    transition: 0.3s;
+    vertical-align: top;
+} 
+.crewGrid .crewBox:hover {
+    transform: translate3d(0,-10px,0);
+}
+.crewGrid .crewBox .crewImg {
+    height: 180px;
+    background-size: auto 110%;
+    background-position: center;
+}
+.crewBox .crewInfo {
+    padding: 16px 0px;
+    border-bottom: #cecece solid 1px;
+    width: 86%;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+.crewBox .crewInfo .name {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+.crewBox .crewInfo .position {
+    color: #ababab;
+    padding-left: 5px;
+    font-size: 14px;
+}
+.crewBox .crewTxt {
+    padding: 16px 15px;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.4;
+    min-height: 80px;
+}
+
+.mobileBtn {
+    display: none;
+}
+.mobileMenu {
+    display: none;
+}
+.mBr {
+    display: none;
+}
+
+/*mobile.css*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /*.menu {
+        display:none;
+    }*/
+    .mBr {
+        display: block;
+    }
+    .pBr {
+        display: none;
+    }
+    .wrap {
+        padding: 0px 10%;
+    }
+    .headerWrap {
+        padding: 18px 8%;
+    }
+    .mobileBtn {
+        display: inline-block;
+        position: absolute;
+        right: 10%;
+        top: 22px;
+    }
+    .invest img {
+        width: 80%;
+        position: relative;
+        left: -5px;
+    }
+    .grayBg .servBox {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+    .grayBg .servGrid {
+        position: relative;
+        left: -5px;
+    }
+    .cover {
+        padding: 22% 10%;
+        height: inherit;
+        background-size: auto 100%;
+        background-position: center;
+        margin-top: 68px;
+    }
+    .cover .coverTxt .txtBig {
+        font-size: 44px;
+        line-height: 1.2;
+    }
+    .cover .coverTxt .txtSmall {
+        font-size: 15px;
+    }
+    .menu {
+        display: inline-block;
+        color: #333;
+        font-size: 18px;
+        position: fixed;
+        top: -240px;
+        left: 0px;
+        background-color: #ffffff;
+        width: 100%;
+        z-index: 9;
+        padding: 20px 10%;
+        box-sizing: border-box;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0px 1px 2px #f0f0f0;
+    }
+    .menu .menuItem {
+        display: block;
+        padding: 10px 0px;
+    }
+    .menu.show {
+        top: 76px;
+    }
+    .subTxt br {
+        display: none;
+    }
+    .crewImgWrap {
+    width: 100%;
+    overflow: hidden;
+    }
+    .crewIntro .crewPage:nth-child(1) {
+        margin-left: 11px;
+    }
+    .crewIntro img {
+        width: 130%;
+        /*position: relative;*/
+        /*left: -15%;*/
+        margin-top: 50px;
+        /*border: 10px solid #538cf7;*/
+        /*filter: brightness(50%);*/
+    }
+    
+    #partnerSlider .partnerItem {
+        width: 100% !important;
+    }
+    #partnerSlider .sliderChange {
+        display:none;
+    }
+    
+    .footer {
+        padding: 40px 10% 50px;
+        text-align: center;
+    }
+    .footer .footLogo br {
+        display:none;
+    }
+    
+    .footer .footLogo a svg {
+        height: 22px;
+        display: inline-block;
+        margin: 5px;
+    }
+    .footer .rightSection {
+        display: inline-block;
+        position: static;
+        text-align: left;
+        padding-top: 30px;
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .footer .rightSection .corpBr {
+        display: block;
+    }
+    .grayBg {
+        background-size: auto 100%;
+        background-position: center;
+    }
+    .btnWrap {
+        text-align: center;
+    }
+    
+    .crewCover {
+        background-size: auto 100%;
+        background-position: center;
+        padding: 100px 15%;
+    }
+    .crewCover .txtBig {
+        font-size: 44px;
+    }
+    .value .valueItem {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .value .valueItem .vTxtBr {
+        display: none;
+    }
+    .crewGrid {
+        text-align: center;
+    }
+    .crewGrid .crewBox {
+        width: 90%;
+    }
+    
+    
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrap {
+      padding: 0% 7%;
+  }
+  .grayBg .servBox {
+      width: 70%;
+      margin-top: 0;
+      margin-bottom: 14px;
+  }
+  .cover {
+      background-size: cover;
+      height: inherit;
+      margin-top:68px;
+      padding: 22% 10%;
+  }
+  .crewCover {
+      padding: 180px 15%;
+  }
+  .crewGrid .crewBox {
+    width: 23.6%;
+  }
+  .crewBox .crewInfo {
+    padding: 12px 0px;
+  }
+  .crewBox .crewInfo .name {
+      font-size: 16px;
+  }
+  .crewBox .crewInfo .position {
+      padding-left: 3px;
+      font-size: 11px;
+  }
+  .crewBox .crewTxt {
+      font-size: 12px;
+  }
+  #partnerSlider .sliderChange {
+        display:none;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
